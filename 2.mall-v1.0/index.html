@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="support/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+</head>
+
+<body>
+	<div id="shops">
+		<section id="shop">
+			<div class="panel panel-default" v-for='(shop,index) in shopsData'>
+				<div class="panel-heading clearfix">	
+					<input type="checkbox" name="" :checked="shop.isShopCheck" @click='pickShop(shop)'>
+					<label class="text-muted text-primary">店铺名:{{shop.shopName}}</label>
+				</div>
+				<div class="panel-body">
+					<table class="table table-bordered">
+						<tbody>
+							<tr class="row text-center text-muted">
+								<td class="col-sm-1 shop-check">
+									<input type="checkbox" name="" :checked="shop.isItemCheck" @click='pickItem(shop)'>
+								</td>
+								<td class="col-sm-2">
+									<img :src="shop.itemImage">
+								</td>
+								<td class="col-sm-2">
+									<span >商品名:{{shop.itemName}}</span>
+								</td>
+								<td class="col-sm-3">
+									<p >简介:{{shop.itemInfos}}</p>
+								</td>
+								<td class="col-sm-2 shop-num">
+									<button @click='clickNumBtn(shop,false)'>-</button>
+									<input type="text" name="" class="text-center" :value="shop.itemNumber" v-model='shop.itemNumber'>
+									<button @click='clickNumBtn(shop,true)'>+</button>
+								</td>
+								<td class="col-sm-1">
+									<p>{{shop.itemPrice*shop.itemNumber|priceFormat}}</p>
+								</td>
+								<td class="col-sm-1 shop-del">
+									<button @click='delItem(index)'>删除</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section id="allCheck">
+			<table class="table">
+				<tr class="text-muted  text-center">
+					<td class="row col-sm-1">
+						<input type="checkbox" name="" id="all" :checked='isAllCheck' @click='allCheck'>
+						<label for="all">全选</label>
+					</td>
+					<td class="row col-sm-6 col-sm-offset-4 lead">
+						<p>共选择了<span class="text-danger">{{totalNum}}</span>件商品,共<span class="text-danger">{{totalPrice|priceFormat}}</span>元</p>
+					</td>
+					<td class="row col-sm-1 ">
+						<button class="btn btn-default  btn-danger">结算</button>
+					</td>
+				</tr>
+			</table>
+		</section>
+	</div>
+
+	<script type="text/javascript" src='support/jquery.js'></script>
+	<script type="text/javascript" src='support/bootstrap.js'></script>
+	<script type="text/javascript" src='support/mock.js'></script>
+	<script type="text/javascript" src='support/vue.js'></script>
+	<script type="text/javascript" src='support/vue-resource.js'></script>
+
+	<!-- 拦截ajax请求 -->
+	<script type="text/javascript" src='data/mock.js'></script> 
+	<!-- 控制vue数据 -->
+	<script type="text/javascript" src='data/app.js'></script>
+</body>
+
+</html>

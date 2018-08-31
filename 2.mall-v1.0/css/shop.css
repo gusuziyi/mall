@@ -1,0 +1,50 @@
+/*通用*/
+body {
+	margin: 30px;
+}
+
+/*商品信息*/
+#shops .table{
+	margin: 0 auto;
+}
+table.table.table-bordered{
+	border: none;
+}
+.panel-heading{
+	padding-left: 30px;
+}
+.panel-heading label,#allCheck label{
+	vertical-align: middle;
+	font-size: 16px;
+	margin-top: -1px;
+}
+.panel input,#allCheck input{
+ 	width: 18px;
+	height: 18px;
+ }
+.table .row td{
+	vertical-align: middle;
+}
+
+.table .row .shop-num input{
+	width: 30%;
+}
+
+
+/* 底部固定信息*/
+#allCheck {
+	position: fixed;
+	bottom: 0;
+	left: 30px;
+	width: 95%;
+	background-color: #ddd;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+#allCheck .table{
+	margin: 10px auto;
+}
+#allCheck .row{
+	vertical-align: middle;
+}
+

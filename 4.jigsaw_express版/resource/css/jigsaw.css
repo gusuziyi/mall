@@ -1,0 +1,15 @@
+body{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+h2{
+	color: blue;
+}
+#jigdaw{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+#jigdaw table{
+	float: left;
+}

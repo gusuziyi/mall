@@ -1,0 +1,136 @@
+.up .top-bar-1{
+	position: relative;
+}
+.up .top-bar-1 img{
+	display: none;
+}
+.up .top-bar-1:hover img{
+	position: absolute;
+	display: block;
+	left: 50%;
+	margin-left: -30px;
+	margin-top: -2px;
+	z-index: 44;
+}
+.row{
+	margin-top: 5px
+}
+.up .upcell>div+div{
+	border-left: 1px solid #777;
+}
+.navbar{
+	margin-top: 10px;
+	height: 80px;
+	background-color: transparent;
+
+}
+.navbar .navbar-header .navbar-brand {
+	padding: 25px 15px;
+}
+.navbar-nav>li>a{
+	line-height: 48px;
+
+}
+#table .nav{
+	/*width: 400px;*/
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav a:focus, .navbar-default .navbar-nav a:hover{
+	background-color: transparent;
+	border-bottom: 2px solid blue;
+}
+@media screen and (min-width: 800px){
+
+	.item{
+		height: 400px;
+		background: no-repeat center center; 
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+
+}
+.about .container .content{
+	font-size: 16px;
+	line-height: 28px;
+}
+
+/*`````教师页面``````*/
+#teachers {
+	
+}
+
+
+#teachers .media-body{
+	vertical-align: middle;
+	width: 60%;
+}
+#teachers .media-body p{
+	margin-top: 10px;
+	
+}
+#teachers .media-right,#teachers .media-left{
+	padding-top: 10px;
+	width: 20%;
+}
+#teachers .media-right{
+	vertical-align:top;
+}
+@media screen and (min-width: 800px) {
+	#teachers .two{
+		margin-top: 0px;
+	}
+}
+/*```` lianjie*/
+#links {
+	margin-top: 20px;
+}
+#links .link-ul{
+	list-style: none;
+	text-align: center;
+}
+#links .link-ul li{
+	display: inline-block;
+	margin: 0 30px;
+}
+/*----lianjie*/
+/*````footer*/
+#footer{
+	background-color: #ccc; 
+	height: 200px;
+	padding-top: 20px;
+	color: white;
+	font-size: 18px;
+}
+
+
+#footer .left,#footer .mid{
+	border-right: 1px solid #666;
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+#footer .leftrow ul{
+	list-style: none;
+}
+#footer .leftrow ul li {
+ 	line-height: 30px;
+}
+#footer .right{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+#table #aaa{
+	overflow-x: auto;
+
+}
+
+.test{
+	overflow: auto;
+}
+.test>ul{
+	width: 400px;
+}
+
