@@ -1,2 +1,2 @@
 # mall
-a simple cart used by  bootstrap vue-cli  jsonserver mock 
+a simple cart created by  bootstrap、vue-cli、jsonserver and mock 
