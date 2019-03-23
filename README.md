@@ -1,6 +1,6 @@
 # 六个前端小练习
 
-2018年8-9月，用了八周时间基本了解了bootstrap、vue-cli、express、jsonserver、mock 都是什么东西
+2018年7-8月，用了八周时间基本了解了bootstrap、vue-cli、express、jsonserver、mock 都是什么东西
 
 第一周比较顺利，在网易云课堂上看完了bootstrap，然后就找了三个网站开始山寨，中间尽管小有波折，但在bootstrap官网上基本都找到了解决方案，还顺便学会了怎样使用阿里的iconfont图标，这是一套字体矢量图标，在任何设备上都不会失真，与bootstrap的响应式思想十分契合；
 
